@@ -60,9 +60,9 @@ for i in range(len(seq1)):
             marked = []
         else:
             unmarked = [j for j in cache if j not in marked]
-            d = random.sample(unmarked, min(b,len(unmarked)))
-            evict(d, i)
-            marked.append(z)
-            cache.append(z)
-            cost = cost + 1
+        d = random.sample(unmarked, min(b,len(unmarked)))
+        evict(d, i)
+        marked.append(z)
+        cache.append(z)
+        cost = cost + 1
 print(counter)            
