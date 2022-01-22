@@ -42,9 +42,9 @@ for i in range(25000):
             marked = []
         else:
             unmarked = [j for j in cache if j not in marked]
-            b = random.choice(unmarked)
-            unmarked.remove(b)
-            cache.remove(b)
-            cache.append(req)
-            marked.append(req)
-            cost = cost + 1
+        b = random.choice(unmarked)
+        unmarked.remove(b)
+        cache.remove(b)
+        cache.append(req)
+        marked.append(req)
+        cost = cost + 1
