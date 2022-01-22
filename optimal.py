@@ -8,7 +8,7 @@ Created on Sun Jan  9 01:11:31 2022
 import numpy as np
 import random
 
-data = np.loadtxt('DATASETS/citibike/citibike_updated.csv', dtype='str',  delimiter= '/n') #load data set of citi bikes
+data = np.loadtxt('DATASETS/citibike_updated.csv', dtype='str',  delimiter= '/n') #load data set of citi bikes
 
 def prediction(s, c):
     for j in range(c+1, len(seq1)):
