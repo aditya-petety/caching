@@ -11,11 +11,11 @@ from collections import Counter
 def compare(s,t):
     return Counter(s) == Counter(t)
 
-data = np.loadtxt('DATASETS/citibike/citibike.csv', dtype='str',  delimiter= ',') #load data set of citi bikes
+data = np.loadtxt('DATASETS/citibike_updated.csv', dtype='str',  delimiter= ',') #load data set of citi bikes
 
 seq1 = []
 for i in range(25000):                                                            #extract first 25k starting location ids
-    seq1.append(int(data[i+1][3]))
+    seq1.append(int(data[i+1]))
 unmarked = []                                                    #list of unmarked elements
 marked = []
 cache1 = []
