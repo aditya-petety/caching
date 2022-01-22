@@ -42,7 +42,7 @@ def lru(s, c):
     p = {x: recent(x,c) for x in s}
     cache.remove(min(p, key=p.get))   
     
-data = np.loadtxt('DATASETS/citibike/citibike_updated.csv', dtype='str', delimiter = '/n')
+data = np.loadtxt('DATASETS/citibike_updated.csv', dtype='str', delimiter = '/n')
 seq1 = []
 for i in range(25000):                                                            #extract first 25k starting location ids
     seq1.append(int(data[i+1]))   
